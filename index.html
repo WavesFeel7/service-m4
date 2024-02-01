@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SERVICE-M</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="menu">
+
+                <div class="menu_top">
+                    <a href="#">
+                        <img class="logo" src="assets/img/logo.svg" alt="logo">
+                    </a>
+                    <a href="#">
+                        <img class="logo" src="assets/img/logo.png" alt="logo">
+                    </a>
+                </div>
+
+                <div class="menu_bottom">
+
+                    <a href="#form" class="menu_btn">Рассчитать стоимость</a>
+
+                    <div class="burger">
+                        <span></span>
+                    </div>
+
+                    <nav class="nav">
+                        <a href="#assortment" class="nav_link">Ассортимент</a>
+                        <a href="#pricelist" class="nav_link">Прайс-лист</a>
+                        <a href="#whyus" class="nav_link">Почему мы?</a>
+                        <a href="#footer1" class="nav_link">Контакты</a>
+                    </nav>
+
+                </div>
+                <nav class="dropdown-menu">
+                    <div class="dropdown-menu_text">
+                        <li>
+                            <a href="#assortment" class="dropdown__link">Ассортимент</a>
+                        </li>
+                        <li>
+                            <a href="#pricelist" class="nav_link">Прайс-лист</a>
+                        </li>
+                        <li>
+                            <a href="#whyus" class="nav_link">Почему мы?</a>
+                        </li>
+                        <li>
+                            <a href="#footer1" class="dropdown__link">Контакты</a>
+                        </li>
+                    </div>
+
+                    <!-- <a href="#form" class="menu_btn_mob">Рассчитать стоимость</a> -->
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="main1">
+        <div class="main">
+            <div class="container">
+                <div class="main__inner">
+                    <div class="main_left">
+                        <h1 class="title"><span>Полный ассортимент</span> генераторов, компрессоров, осушителей и
+                            ручного инструмента <span>с доставкой по всему Казахстану</span></h1>
+                        <p class="subtitle">Доставка бесплатная</p>
+                        <div class="btns">
+                            <!-- <a href="#form" class="btn">Construction</a> -->
+                            <a href="https://wa.me/77077334337?text=Привет! Я интересуюсь генераторами и комплектующими. Могли бы вы предоставить более подробную информацию?"
+                                class="btn btn-green">Написать в WhatsApp</a>
+                        </div>
+
+                    </div>
+                    <img src="assets/img/Box.svg" class="tap" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="catalog" id="assortment">
+        <div class="container">
+            <div class="catalog_header">
+                <h2 class="catalog_title">
+                    Все генераторы и комплектующие в одном месте
+                </h2>
+                <div class="filter">
+                    <button class="btn_filter" data-filter="compressors">Компрессоры</button>
+                    <button class="btn_filter" data-filter="dryers">Осушители</button>
+                    <button class="btn_filter" data-filter="receivers">Ресиверы</button>
+                    <button class="btn_filter" data-filter="Welding">Сварочное⠀оборудование</button>
+                    <button class="btn_filter" data-filter="Welding">Ручной⠀инструмент</button>
+                </div>
+            </div>
+
+            <div class="all_cards" id="productContainer">
+                <!-- Карточки продуктов будут добавлены динамически с использованием JavaScript -->
+            </div>
+
+            <button id="showMoreBtn">Показать больше</button>
+
+        </div>
+    </section>
+
+    <section class="pricelist" id="pricelist">
+        <div class="container">
+            <div class="pricelist_inner">
+                <img src="assets/img/Tap2.svg" class="tap2" alt="">
+                <div class="pricelist_inner_info">
+                    <div class="pricelist_title">Скачайте полный прайс лист</div>
+                    <a class="btn btn-price" href="assets/doc/catalog.pdf" download>Скачать</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="whyus" id="whyus">
+        <div class="container">
+            <h2 class="whyus_title">Почему мы? <span>Быстрая доставка, широкий выбор и удобные условия!</span></h2>
+            <div class="whyus_inner">
+                <img class="whyus_img" src="assets/img/whyus_img.jpg" alt="">
+                <div class="whyus_right">
+                    <div class="whyus_content">
+                        <h3 class="whyus_content_title">Скорость</h3>
+                        <p class="whyus_content_text">Доставка по всему Казахстану</p>
+                    </div>
+                    <div class="whyus_content">
+                        <h3 class="whyus_content_title">Везде и всюду</h3>
+                        <p class="whyus_content_text">Наши службы доставки работают эффективно и точно</p>
+                    </div>
+                    <div class="whyus_content">
+                        <h3 class="whyus_content_title">Широкий ассортимент товаров</h3>
+                        <p class="whyus_content_text">Мы предлагаем широкий выбор продукции, чтобы удовлетворить
+                            разнообразные потребности наших клиентов</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="additional_block">
+        <div class="container">
+            <div class="additional_block_bg">
+                <h3 class="additional_block_text">Кроме того, <span>СЕРВИС-М</span> предоставляет услуги по техническому
+                    обслуживанию, ремонту и поставке
+                    запчастей для
+                    всех видов строительной техники. Доверьте нам заботу о вашем оборудовании, и мы обеспечим его
+                    бесперебойную работу.</h3>
+                <img class="additional_ellipse1" src="assets/img/Ellipse2.svg" alt="Ellipse">
+                <img class="additional_ellipse2" src="assets/img/Ellipse2.svg" alt="Ellipse">
+            </div>
+        </div>
+    </div>
+
+    <form class="form" id="form" action="process_form.php" method="post">
+        <div class="container">
+            <div class="form_bg">
+                <div class="form_inner">
+                    <div class="form_text">
+                        <h2 class="form_title">Спешите рассчитать стоимость</h2>
+                        <h2 class="form_subtitle">
+                            Уведомите менеджера о том, что вы отправили заявку
+                            через сайт, и получите доставку бесплатно!
+                        </h2>
+                    </div>
+                    <div class="form_content">
+                        <div class="form_input_container">
+                            <input class="form_input" type="text" id="name" name="name" placeholder="Имя">
+                            <div class="validation-text" id="name-error"></div>
+                        </div>
+                        <div class="form_input_container">
+                            <input class="form_input" name="Номер" type="tel" id="tel" name="tel" placeholder="Телефон">
+                            <div class="validation-text" id="tel-error"></div>
+                        </div>
+                        <button class="form_btn" type="submit" id="submit-btn">Отправить</button>
+                        <div id="loading-indicator" style="display: none;">Загрузка...</div>
+                    </div>
+                </div>
+    
+                <img class="ellipse1" src="assets/img/Ellipse.svg" alt="Ellipse">
+                <img class="ellipse2" src="assets/img/Ellipse.svg" alt="Ellipse">
+            </div>
+        </div>
+    </form>
+    
+    
+
+    <footer class="footer" id="footer1">
+        <div class="container">
+            <h2 class="footer_title">Контакты</h2>
+            <div class="footer_inner">
+                <div class="footer_content">
+                    <div class="footer_content_item">
+                        <img src="assets/img/icon-adress.svg" alt="">
+                        <a href="https://www.google.com/maps/search/?api=1&query=30%20Гвардейская%20улица%20Кабанбай%20батыра,%20Семей%20070000"
+                            target="_blank">Адресс</a>
+                    </div>
+                    <div class="footer_content_item">
+                        <img src="assets/img/icon-phone.svg" alt="">
+                        <a href="tel:+77077334337">+7 707 733 4337</a>
+                    </div>
+                </div>
+                <iframe class="map"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2542.3595859800635!2d80.25547821256728!3d50.41577167146707!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x42f26535e0ac4883%3A0x8a7592de4f28e84f!2zMzAg0JPQstCw0YDQtNC10LnRgdC60LDRjw!5e0!3m2!1sru!2skz!4v1706541957681!5m2!1sru!2skz"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </footer>
+
+    <button id="scrollToTopBtn" onclick="scrollToTop()">
+        <img class="arrow" src="assets/img/Arrow.svg" alt="button">
+    </button>
+    <button id="scrollToTopBtn2" onclick="redirectToWhatsApp()">
+        <img class="arrow" src="assets/img/Phone.svg" alt="button">
+    </button>
+
+    <script src="js/inputmask.min.js"></script>
+    <script src="js/just-validate.min.js"></script>
+    <script type="module" src="js/main.js"></script>
+
+</body>
+
+</html>
